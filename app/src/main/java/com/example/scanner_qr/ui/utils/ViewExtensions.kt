@@ -20,6 +20,6 @@ fun View.gone(){
 
 @SuppressLint("SimpleDateFormat")
 fun Calendar.toFormattedDisplay() : String{
-    val simpleDateFormat = SimpleDateFormat("dd-mm-yyyy hh:mm:a",Locale.US)
+    val simpleDateFormat = SimpleDateFormat("dd-MM-yyyy hh:mm:a",Locale.US)
     return simpleDateFormat.format(this.time)
 }
