@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkBrown">
+    android:background="#01081C">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/ic_qr_code_big"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        android:id="@+id/appCompatImageView"/>
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:src="@drawable/ic_qr_code_big"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.39"-->
+    <!--        android:id="@+id/appCompatImageView"/>-->
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="222dp"
         android:text="QR scanner"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
-        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
-        app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
-        android:layout_marginTop="24dp" />
+        android:textColor="#9A6D5AE5"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="311dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="109dp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qr1" />
 
 
-<!--    <androidx.appcompat.widget.AppCompatTextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:layout_marginBottom="40dp"-->
-<!--        android:text="@string/by_androchef_youtube_channel"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="14sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/appCompatImageView" />-->
+    <!--    <androidx.appcompat.widget.AppCompatTextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:layout_marginBottom="40dp"-->
+    <!--        android:text="@string/by_androchef_youtube_channel"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/appCompatImageView" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

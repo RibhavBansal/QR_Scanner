@@ -24,20 +24,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun setBottomNavigation() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
-            when (it.itemId) {
-                R.id.qrScanMenuId -> {
-                    viewPager.currentItem = 0
-                }
-                R.id.scannedResultMenuId -> {
-                    viewPager.currentItem = 1
-
-                }
-                R.id.favouriteScannedMenuId -> {
-                    viewPager.currentItem = 2
-                }
-                else ->{
-                    viewPager.currentItem = 0
-                }
+            viewPager.currentItem = when (it.itemId) {
+                R.id.qrScanMenuId -> 0
+                R.id.scannedResultMenuId -> 1
+                R.id.favouriteScannedMenuId -> 2
+                else -> 0
             }
             return@setOnNavigationItemSelectedListener true
         }
@@ -58,19 +49,11 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onPageSelected(position: Int) {
-                when (position) {
-                    0 -> {
-                        bottomNavigationView.selectedItemId = R.id.qrScanMenuId
-                    }
-                    1 -> {
-                        bottomNavigationView.selectedItemId = R.id.scannedResultMenuId
-                    }
-                    2 -> {
-                        bottomNavigationView.selectedItemId = R.id.favouriteScannedMenuId
-                    }
-                    else -> {
-                        bottomNavigationView.selectedItemId = R.id.qrScanMenuId
-                    }
+                bottomNavigationView.selectedItemId = when (position) {
+                    0 -> R.id.qrScanMenuId
+                    1 -> R.id.scannedResultMenuId
+                    2 -> R.id.favouriteScannedMenuId
+                    else -> R.id.qrScanMenuId
                 }
             }
 

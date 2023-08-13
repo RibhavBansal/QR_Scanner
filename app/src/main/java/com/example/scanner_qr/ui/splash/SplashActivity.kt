@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
         Handler().postDelayed({
             checkForPermission()
-        }, 2000)
+        }, 3000)
     }
 
     private fun checkForPermission() {
